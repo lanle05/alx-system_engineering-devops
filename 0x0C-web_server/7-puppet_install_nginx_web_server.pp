@@ -10,7 +10,7 @@ exec {'Hello':
   command  => 'echo "Hello World!" | sudo tee /var/www/html/index.html',
   provider => shell,
 }
-exec {'sudo sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/onepunchcoder.medium.com\/;\\n\\t}/" /etc/nginx/sites-available/default':
+exec {'sudo sed -i "s/listen 80 default_server;/listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/bolanle.medium.com\/;\\n\\t}/" /etc/nginx/sites-available/default':
   provider => shell,
 }
 exec {'run':
