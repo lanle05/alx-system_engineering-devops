@@ -2,7 +2,7 @@
 file { '~/ssh/config':
   ensure => 'present',
   content => "# SSH client configuration\n
-              52.205.84.91\n
+              100.27.12.175\n
               IdentityFile ~/.ssh/school\n
               PasswordAuthentication no\n",
   owner => 'ubuntu',
