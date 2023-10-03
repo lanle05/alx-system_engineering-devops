@@ -2,6 +2,7 @@
 # A bash script to install Nginx server
 apt-get update
 apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo "Hello World!" > /var/www/html/index.html
-service nginx start
+echo "Hello World!" > sudo tee /var/www/html/index.html
+sudo service nginx restart
+sudo service nginx enable
+exit 0
